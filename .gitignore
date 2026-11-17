@@ -40,3 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 .cache/
 next-env.d.ts
+
+.vercel

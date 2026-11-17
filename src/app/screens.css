@@ -72,11 +72,37 @@
   background: #f6e5c4;
 }
 .file-label {
-  font-size: 11px;
-  color: #708265;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px dashed #b9c8b1;
+  border-radius: 8px;
+  background: #f7faf4;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f6646;
+  cursor: pointer;
 }
+.file-label:hover {
+  background: #eef4ea;
+}
+.file-label:focus-within {
+  outline: 2px solid #2f6b4f;
+  outline-offset: 2px;
+}
+.file-label:has(input:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* ブラウザ標準の英語表記（Choose File）を出さないよう、入力欄は視覚的に隠す */
 .file-label input {
-  font-size: 11px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
 }
 .photos {
   display: flex;
