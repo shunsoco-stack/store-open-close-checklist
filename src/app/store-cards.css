@@ -1,0 +1,147 @@
+/* Store cards */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.store-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.store-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 18px 13px;
+}
+.store-title h3 {
+  font-size: 15px;
+}
+.store-title p {
+  font-size: 9px;
+  margin-top: 3px;
+  color: #82907d;
+}
+.store-symbol {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 44px;
+  flex-shrink: 0;
+  background: #edf2e6;
+  color: #7e9160;
+  border-radius: 10px;
+}
+.tone-1 {
+  background: #f5eee8;
+  color: #ac8873;
+}
+.tone-2 {
+  background: #ececf4;
+  color: #8586a8;
+}
+.store-number {
+  margin-left: auto;
+  color: #c0c9b9;
+  font-size: 11px;
+  align-self: flex-start;
+}
+.store-meta {
+  padding: 0 18px 16px;
+  color: #86917e;
+  font-size: 10px;
+}
+.store-meta span {
+  display: block;
+}
+.check-preview {
+  border-top: 1px solid #ecf0e7;
+  padding: 19px 18px;
+}
+.check-preview h4 {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.check-preview h4 svg {
+  width: 18px;
+  color: #8c9b7c;
+}
+.deadline {
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #809078;
+}
+.deadline span {
+  color: #5b6e55;
+}
+.preview-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 9px 0 15px;
+  font-size: 10px;
+  color: #879080;
+}
+.preview-detail b {
+  color: #6c7e5d;
+  font-weight: 500;
+}
+.check-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  font-size: 11px;
+  padding: 10px 12px;
+  border: 1px solid #dce6d5;
+  border-radius: 6px;
+  color: #42683c;
+  background: #f1f6ec;
+  font-weight: 650;
+}
+.check-link:hover {
+  background: #e7eedf;
+}
+.check-link.planned {
+  background: #f8f9f6;
+  border-color: #e8ece4;
+  color: #89947e;
+  font-weight: 400;
+}
+
+/* Handover preview */
+.home-handovers .panel {
+  padding: 0 22px;
+}
+.handover-preview {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 0;
+}
+.handover-preview + .handover-preview {
+  border-top: 1px solid #edf0e7;
+}
+.handover-preview strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.handover-preview p {
+  font-size: 10px;
+  color: #89917f;
+  margin-top: 5px;
+}
+.handover-preview .badge {
+  margin-left: auto;
+}
+.unread-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c7a66b;
+  flex-shrink: 0;
+}

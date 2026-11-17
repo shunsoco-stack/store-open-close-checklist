@@ -1,0 +1,52 @@
+/* Print-friendly individual records */
+@media print {
+  body {
+    background: white;
+    font-size: 11px;
+  }
+  .sidebar,
+  .topbar,
+  footer,
+  .no-print,
+  .notice,
+  .offline,
+  button,
+  .handover-card label {
+    display: none !important;
+  }
+  .main-wrap {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 0;
+    max-width: none;
+  }
+  .panel {
+    break-inside: avoid;
+    border-color: #bbb;
+    padding: 12px;
+  }
+  .history-items {
+    gap: 8px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .badge {
+    border: 1px solid #aaa;
+  }
+  .handover-grid {
+    display: block;
+  }
+  .handover-card {
+    margin-bottom: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
